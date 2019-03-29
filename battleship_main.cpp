@@ -5,19 +5,20 @@ int main()
         string randomMove();
         bool done = false;
         string playerMove,computerMove;
-   Board  playerBoard, computerBoard;
-   int PlayercheckResult,computerCheckResult;
+        Board  playerBoard, computerBoard;
+        int PlayercheckResult,computerCheckResult;
         int checkMove(string move, Board gameBoard, int &row, int &col);
         int playMove(int row, int col, Board &gameBoard);
         void pauseForEnter
         bool allAreSunk;
         allAreSunk = false;
+
         // Welcome the player to the game
-   welcome();
+        welcome();
 
         // Initialize the game boards
-   initializeBoard(playerBoard);
-   initializeBoard(computerBoard);
+        initializeBoard(playerBoard);
+        initializeBoard(computerBoard);
 
         // Play the game until one player has sunk the other's ships
         while(!done)
